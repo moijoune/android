@@ -1,0 +1,23 @@
+# Snooker app description
+
+The app contains a number of different ImageButtons (a total of 14 ImageButtons for the 7 coloured balls of 
+the game - 7 for each player, 4 undo/redo buttons (2 for each player), 2 +4_points buttons (1 for each player - this is valid in 
+case of a foul) and a restart button.
+
+Each button corresponding to a coloured ball, changes the score as follows:
+
+1. a red ball increases the score by 1
+2. a yellow ball increases the score by 2
+3. a green ball increases the score by 3
+4. a brown ball increases the score by 4
+5. a blue ball increases the score by 5
+6. a pink ball increases the score by 6
+7. a black ball increases the score by 7
+
+The undo button reverts the score to its previous value. This works only once!
+The redo button reverts the score to its value before clicking the undo button. This works only once!
+
+The two buttons that increase the score by 4 points are clicked in case of a foul.
+
+The restart button displays who is the winner of the previous game and upon clicking it again, it clears the display area. The latter
+is also cleared when any of the other buttons are clicked.
