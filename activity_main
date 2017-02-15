@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.android.example.snooker.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/snooker"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ballSelect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/activity_vertical_margin"
+                    android:text="@string/player1"
+                    android:textAllCaps="true" />
+
+                <TextView
+                    android:id="@+id/displayScore1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:gravity="center"
+                    android:text="@string/score1"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/scoreSize" />
+
+                <ImageButton
+                    android:id="@+id/red1"
+                    android:layout_width="@dimen/button_width"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:background="@drawable/redskin"
+                    android:onClick="buttonClick" />
+
+                <ImageButton
+                    android:id="@+id/yellow1"
+                    android:layout_width="@dimen/button_width"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:background="@drawable/yellowskin"
+                    android:onClick="buttonClick" />
+
+                <ImageButton
+                    android:id="@+id/green1"
+                    android:layout_width="@dimen/button_width"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:background="@drawable/greenskin"
+                    android:onClick="buttonClick" />
+
+                <ImageButton
+                    android:id="@+id/brown1"
+                    android:layout_width="@dimen/button_width"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:background="@drawable/brownskin"
+                    android:onClick="buttonClick" />
+
+                <ImageButton
+                    android:id="@+id/blue1"
+                    android:layout_width="@dimen/button_width"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:background="@drawable/blueskin"
+                    android:onClick="buttonClick" />
+
+                <ImageButton
+                    android:id="@+id/pink1"
+                    android:layout_width="@dimen/button_width"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:background="@drawable/pinkskin"
+                    android:onClick="buttonClick" />
+
+                <ImageButton
+                    android:id="@+id/black1"
+                    android:layout_width="@dimen/button_width"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:background="@drawable/blackskin"
+                    android:onClick="buttonClick" />
+
+                <Button
+                    android:id="@+id/fourPoints1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_gravity="center"
+                    android:background="@android:color/transparent"
+                    android:onClick="buttonClick"
+                    android:text="@string/fourPoints"
+                    android:textAllCaps="true" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/undo1"
+                        android:layout_width="@dimen/button_width"
+                        android:layout_height="@dimen/button_height"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="@dimen/activity_vertical_margin"
+                        android:background="@drawable/undo"
+                        android:onClick="buttonClick" />
+
+                    <ImageButton
+                        android:id="@+id/redo1"
+                        android:layout_width="@dimen/button_width"
+                        android:layout_height="@dimen/button_height"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/activity_vertical_margin"
+                        android:background="@drawable/redo"
+                        android:onClick="buttonClick" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/activity_vertical_margin"
+                    android:text="@string/player2"
+                    android:textAllCaps="true" />
+
+                <TextView
+                    android:id="@+id/displayScore2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:gravity="center"
+                    android:text="@string/score2"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/scoreSize" />
+
+                <ImageButton
+                    android:id="@+id/red2"
+                    android:layout_width="@dimen/button_width"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:background="@drawable/redskin"
+                    android:onClick="buttonClick" />
+
+                <ImageButton
+                    android:id="@+id/yellow2"
+                    android:layout_width="@dimen/button_width"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:background="@drawable/yellowskin"
+                    android:onClick="buttonClick" />
+
+                <ImageButton
+                    android:id="@+id/green2"
+                    android:layout_width="@dimen/button_width"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:background="@drawable/greenskin"
+                    android:onClick="buttonClick" />
+
+                <ImageButton
+                    android:id="@+id/brown2"
+                    android:layout_width="@dimen/button_width"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:background="@drawable/brownskin"
+                    android:onClick="buttonClick" />
+
+                <ImageButton
+                    android:id="@+id/blue2"
+                    android:layout_width="@dimen/button_width"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:background="@drawable/blueskin"
+                    android:onClick="buttonClick" />
+
+                <ImageButton
+                    android:id="@+id/pink2"
+                    android:layout_width="@dimen/button_width"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:background="@drawable/pinkskin"
+                    android:onClick="buttonClick" />
+
+                <ImageButton
+                    android:id="@+id/black2"
+                    android:layout_width="@dimen/button_width"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:background="@drawable/blackskin"
+                    android:onClick="buttonClick" />
+
+                <Button
+                    android:id="@+id/fourPoints2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_gravity="center"
+                    android:background="@android:color/transparent"
+                    android:onClick="buttonClick"
+                    android:text="@string/fourPoints"
+                    android:textAllCaps="true" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/undo2"
+                        android:layout_width="@dimen/button_width"
+                        android:layout_height="@dimen/button_height"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="@dimen/activity_vertical_margin"
+                        android:background="@drawable/undo"
+                        android:onClick="buttonClick" />
+
+                    <ImageButton
+                        android:id="@+id/redo2"
+                        android:layout_width="@dimen/button_width"
+                        android:layout_height="@dimen/button_height"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/activity_vertical_margin"
+                        android:background="@drawable/redo"
+                        android:onClick="buttonClick" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/restart"
+                android:layout_width="@dimen/reset_button_width"
+                android:layout_height="@dimen/rest_button_height"
+                android:layout_gravity="center"
+                android:background="@drawable/restart"
+                android:onClick="buttonClick" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/winner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/winner"
+        android:textAllCaps="true"/>
+</RelativeLayout>
